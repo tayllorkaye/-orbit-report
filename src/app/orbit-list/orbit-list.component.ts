@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Satellite } from '../satellite';
 
 @Component({
   selector: 'app-orbit-list',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./orbit-list.component.css']
 })
 export class OrbitListComponent implements OnInit {
-
+  @Input() satellites: Satellite[];
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
